@@ -10,7 +10,7 @@ Este aplicativo permite gerar uma página HTML com destaque de sintaxe para arqu
 
 ## Funcionalidades
 
-- Lê um arquivo de código-fonte (.js, .py, .java)
+- Lê um arquivo de código-fonte (.js, .py, .java(Não consegui testar direito.))
 - Gera um arquivo `highlighted.html` com o código destacado em sintaxe
 - Inclui um exemplo de função para copiar o código destacado para a área de transferência
 
