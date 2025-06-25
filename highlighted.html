@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Highlight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        pre {
+            padding: 15px;
+            background: #2d2d2d;
+            color: #f8f8f2;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Highlighted Code</h1>
+    <pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">copyToClipboard</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> codeElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;pre&quot;</span>);
+    navigator.<span class="hljs-property">clipboard</span>.<span class="hljs-title function_">writeText</span>(codeElement.<span class="hljs-property">innerText</span>)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Code copied to clipboard!&quot;</span>))
+        .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&quot;Failed to copy: &quot;</span>, err));
+}
+</code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</body>
+</html>
